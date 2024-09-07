@@ -1,0 +1,280 @@
+/**
+ * Top nav styles.
+ */
+
+header {
+  --header-px: 2rem;
+  --header-py: 1.5rem;
+
+  background-color: var(--violet-300, darkorchid);
+  color: white;
+
+  position: sticky;
+  top: 0;
+
+  padding: var(--header-py) var(--header-px);
+
+  z-index: 20;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+/** Logo. */
+
+.logo {
+  display: block;
+  width: fit-content;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: .075rem;
+
+  color: var(--violet-50, white);
+}
+
+.logo__title {
+  display: block;
+
+  text-wrap: nowrap;
+}
+
+.logo__title__icon {
+  margin-right: .35rem;
+}
+
+/** Navbar menu. */
+
+.navbar {
+  display: block;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__menu__item__link {
+  cursor: pointer;
+  position: relative;
+
+  text-wrap: nowrap;
+  color: var(--violet-100, aliceblue);
+
+  transition: 75ms;
+}
+
+.navbar__menu__item__link:hover {
+  color: white;
+}
+
+.navbar__menu__item__link::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -.25rem;
+  transform: translateX(-50%);
+
+  height: 1px;
+  width: 0;
+
+  background-color: white;
+
+  transition: width 75ms ease-in-out;
+}
+
+.navbar__menu__item__link:hover::before {
+  width: 100%;
+}
+
+/** Navbar responsivness behaivor. */
+
+.burger-btn {
+  cursor: pointer;
+  display: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  /** Burger menu state. */
+
+  .burger-btn {
+    --bar-h: 4px;
+    --bar-gap: 6px;
+
+    display: block;
+
+    width: 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--bar-gap);
+  }
+
+  .burger-btn__bar {
+    display: block;
+
+    width: 100%;
+    height: var(--bar-h);
+
+    border-radius: 1rem;
+
+    background-color: white;
+
+    transition: 75ms ease-in-out;
+  }
+
+  .js-active .burger-btn__bar {
+    width: 1.75rem;
+  }
+
+  .js-active .burger-btn__bar--1 {
+    transform:
+      translate(0, calc(var(--bar-h) + var(--bar-gap))) rotate(45deg);
+  }
+
+  .js-active .burger-btn__bar--2 {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  .js-active .burger-btn__bar--3 {
+    transform:
+      translate(0, calc(-1 * (var(--bar-h) + var(--bar-gap)))) rotate(-45deg);
+  }
+
+  /** Navbar menu new position. */
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--header-px));
+    transform: translateY(-105%);
+
+    width: 100vw;
+
+    background-color: var(--violet-300);
+
+    z-index: 10;
+
+    transition: transform 105ms ease-in-out;
+  }
+
+  .navbar.js-active {
+    transform: translateY(0);
+    top: 100%;
+  }
+
+  .navbar__menu {
+    margin-top: var(--header-py);
+
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar__menu__item {
+    width: 100%;
+  }
+
+  .navbar__menu__item__link {
+    width: 100%;
+
+    text-align: center;
+    padding: .75rem;
+
+    display: block;
+  }
+
+  .navbar__menu__item__link:hover {
+    background-color: var(--violet-400);
+  }
+
+  .navbar__menu__item__link:hover::before {
+    width: 0;
+  }
+}
+
+/**
+ * Main section styles.
+ */
+
+.hero {
+  height: min(calc(100svh - 12rem), calc(var(--screen-2xl) / 16 * 9));
+}
+
+.hero__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  height: 100%;
+
+  padding: 2rem;
+}
+
+.hero__body__text {
+  max-width: 40ch;
+}
+
+.hero__body__text__title {
+  color: var(--maya-500);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.75rem;
+
+  margin-bottom: 1rem;
+}
+
+.hero__body__text__subtitle {
+  color: var(--salmon-300);
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+
+  margin-bottom: 3.5rem;
+}
+
+.hero__body__text__open-btn {
+  padding: .75rem 1.5rem;
+  background-color: var(--maya-500);
+
+  border-radius: .25rem;
+
+  color: white;
+  font-size: 1.25rem;
+
+  transition: background 75ms ease;
+}
+
+.hero__body__text__open-btn:hover {
+  background-color: var(--maya-700);
+}
+
+.hero__body__ilustration__image {
+  --square-w: 60vw;
+  --square-max-w: 30ch;
+
+  width: var(--square-w);
+  max-width: var(--square-max-w);
+}
+
+/**
+ * Footer styles. It should be simple.
+ */
+
+footer {
+  background-color: var(--violet-900);
+  color: var(--violet-50);
+}
+
+footer .container {
+  padding: 1rem 2rem;
+}
