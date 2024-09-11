@@ -1,8 +1,8 @@
-*{
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- font-family: 'Josefin Sans', sans-serif;   
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar {
@@ -29,45 +29,46 @@
     position: relative;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.navbar__container::after, .navbar__container::before{
+.navbar__container::after,
+.navbar__container::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), #c471ff, #ff90d6, #37ffaf, #6fabff, #bc7eff, #c471ff);
+    /* background-image: conic-gradient(from var(--angle), #c471ff, #ff90d6, #37ffaf, #6fabff, #bc7eff, #c471ff); */
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     padding: 3px;
     border-radius: 10px;
-    animation: 3s spin linear infinite;
+    /* animation: 3s spin linear infinite; */
 }
 
-.navbar__container::before{
+.navbar__container::before {
     filter: blur(1.5rem);
     opacity: 0.5;
 }
 
-@keyframes spin{
-    from{
+@keyframes spin {
+    from {
         --angle: 0deg;
     }
-    to{
+
+    to {
         --angle: 360deg;
     }
 }
 
 #navbar__logo {
     background-color: #d6ff90;
-    background-image: linear-gradient(to top, #e6ffc2 0%, #ffffff
-    100%);
+    background-image: linear-gradient(to top, #e6ffc2 0%, #ffffff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -92,7 +93,7 @@
     text-align: center;
 }
 
-.navbar__item{
+.navbar__item {
     height: 80px;
 }
 
@@ -140,7 +141,7 @@
 }
 
 @media screen and (max-width: 960px) {
-    .navbar__container{
+    .navbar__container {
         display: flex;
         justify-content: space-between;
         height: 80px;
@@ -150,7 +151,7 @@
         padding: 0;
     }
 
-    .navbar__menu{
+    .navbar__menu {
         display: grid;
         grid-template-columns: auto;
         margin: 0;
@@ -172,6 +173,7 @@
         height: 50vh;
         font-size: 1.6rem;
     }
+
     #navbar__logo {
         padding-left: 25px;
     }
@@ -321,8 +323,9 @@
 .main__btn:hover:after {
     width: 100%;
 }
+
 .main__img--container {
-text-align: center;
+    text-align: center;
 }
 
 .main__img {
@@ -374,14 +377,14 @@ text-align: center;
     .main__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
-    } 
+    }
 
     .main__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
 }
-    
+
 .services {
     background: #5fffbc;
     display: flex;
@@ -394,15 +397,13 @@ text-align: center;
 
 .services h1 {
     background-color: #1e0048;
-    background-image: linear-gradient(
-        to right,
-        #ff5858 0%,
-        #ff8763 0%, 
-        #fbff7c 21%,  
-        #81ff8d 52%,
-        #7664ff 78%,
-        #e37dfd 100%
-    );
+    background-image: linear-gradient(to right,
+            #ff5858 0%,
+            #ff8763 0%,
+            #fbff7c 21%,
+            #81ff8d 52%,
+            #7664ff 78%,
+            #e37dfd 100%);
 
     background-size: 100%;
     margin-bottom: 1rem;
@@ -411,7 +412,7 @@ text-align: center;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-} 
+}
 
 .services__container {
     display: flex;
@@ -424,25 +425,41 @@ text-align: center;
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-        ), 
-        url('/pexels-nicole-berro-991141-2393789\ \(1\).jpg');
-        background-size: cover;
-        position: relative;
-        color: rgb(105, 0, 147);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%),
+        url('./images/cat-giphy-2.webp');
+    background-size: cover;
+    position: relative;
+    color: rgb(105, 0, 147);
 }
 
-.services__card::nth-child(2) { 
-    background-image: linear linear-gradient(
-        to bottom
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ),
-    url('/pexels-diimejii-2574619\ \(1\).jpg');
+.services__card::nth-child(2) {
+    background-image: linear linear-gradient(to bottom rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%),
+        url('./images/cat-giphy-2.webp');
 }
+
+.cats__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%),
+        url('./images/cat-giphy-3.webp');
+    background-size: cover;
+    position: relative;
+    color: rgb(105, 0, 147);
+}
+
+.cats__card::nth-child(2) {
+    background-image: linear linear-gradient(to bottom rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%),
+        url('./images/cat-giphy-3.webp');
+}
+
 
 .services h2 {
     position: absolute;
@@ -455,6 +472,13 @@ text-align: center;
     top: 400px;
     left: 30px;
 }
+
+.cats__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
 
 .services__card button {
     color: #7b009d;
@@ -476,6 +500,27 @@ text-align: center;
     cursor: pointer;
 }
 
+.cats__card button {
+    color: #7b009d;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #79e0ff;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cats__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 96px) {
     .services {
         font-size: 2rem;
@@ -483,24 +528,24 @@ text-align: center;
     }
 
 
-.services h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
-}
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
-.services {
-    height: 1400px;
-}
+    .services {
+        height: 1400px;
+    }
 
-.services h1 {
-    font-size: 1.2rem;
-}
+    .services h1 {
+        font-size: 1.2rem;
+    }
 
-.services__card {
-    width: 300px;
-}
+    .services__card {
+        width: 300px;
+    }
 }
 
 .footer__container {
@@ -522,10 +567,10 @@ text-align: center;
 }
 
 .footer__links {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__link--wrapper {
@@ -546,43 +591,43 @@ text-align: center;
     margin-bottom: 16px;
 }
 
-.footer__link--items > h2 {
+.footer__link--items>h2 {
     color: #fff;
 }
 
- .footer__link--items a {
+.footer__link--items a {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
- }
+}
 
- .footer__link--items a:hover {
+.footer__link--items a:hover {
     color: #fff;
     transition: 0.3s ease-out;
- }
+}
 
- .social__media {
+.social__media {
     max-width: 1000px;
     width: 100%;
- }
+}
 
- .social__media--wrap {
+.social__media--wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     max-width: 1000px;
     margin: 40px auto 0 auto;
- }
+}
 
- .social__icons {
+.social__icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 240px;
- }
+}
 
- .social__logo {
+.social__logo {
     color: #fff;
     justify-self: flex-start;
     margin-left: 20px;
@@ -592,22 +637,23 @@ text-align: center;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
- }
+}
 
- .website__rights {
-color: #ffffff;
- }
+.website__rights {
+    color: #ffffff;
+}
 
 
- #footer__logo, .social__icons--link {
+#footer__logo,
+.social__icons--link {
     color: #fff;
- }
+}
 
- @media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) {
     .footer__links {
         padding-top: 2rem;
     }
-    
+
     .footer__logo {
         margin-bottom: 2rem;
     }
@@ -623,12 +669,12 @@ color: #ffffff;
     .social__media--wrap {
         flex-direction: column;
     }
- }
+}
 
- @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .footer__link--items {
         margin: 0;
         padding: 10px;
         width: 100%;
     }
- }
+}
