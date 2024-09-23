@@ -1,0 +1,43 @@
+:root {
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}
+
+/**
+ * This break points is used to make the width of the containers a little more
+ * predictable. Since it will jump from one to another, except for the smaller
+ * screens, where the container will occup the entire screen width.
+ */
+
+@media (min-width: 640px) {
+  :root {
+    --container-max-w: var(--screen-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-max-w: var(--screen-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-max-w: var(--screen-lg);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-max-w: var(--screen-xl);
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --container-max-w: var(--screen-2xl);
+  }
+}
