@@ -1,0 +1,296 @@
+:root {
+  /**
+   * Blue Violet: #8732D7
+   */
+
+  --violet-h: 271;
+  --violet-s: 67%;
+  --violet-l: 52%;
+
+  --violet-hsl: var(--violet-h), var(--violet-s), var(--violet-l);
+  --violet-hs: var(--violet-h), var(--violet-s);
+  --violet: hsl(var(--violet-hsl));
+
+  --violet-50: hsl(var(--violet-hs), 95%);
+  --violet-100: hsl(var(--violet-hs), 90%);
+  --violet-200: hsl(var(--violet-hs), 80%);
+  --violet-300: hsl(var(--violet-hs), 70%);
+  --violet-400: hsl(var(--violet-hs), 60%);
+  --violet-500: hsl(var(--violet-hs), 50%);
+  --violet-600: hsl(var(--violet-hs), 40%);
+  --violet-700: hsl(var(--violet-hs), 30%);
+  --violet-800: hsl(var(--violet-hs), 20%);
+  --violet-900: hsl(var(--violet-hs), 10%);
+  --violet-950: hsl(var(--violet-hs), 5%);
+
+  --violet-50-hsl: var(--violet-hs), 95%;
+  --violet-100-hsl: var(--violet-hs), 90%;
+  --violet-200-hsl: var(--violet-hs), 80%;
+  --violet-300-hsl: var(--violet-hs), 70%;
+  --violet-400-hsl: var(--violet-hs), 60%;
+  --violet-500-hsl: var(--violet-hs), 50%;
+  --violet-600-hsl: var(--violet-hs), 40%;
+  --violet-700-hsl: var(--violet-hs), 30%;
+  --violet-800-hsl: var(--violet-hs), 20%;
+  --violet-900-hsl: var(--violet-hs), 10%;
+  --violet-950-hsl: var(--violet-hs), 5%;
+
+  /**
+   * Salmon Pink: #FFA3B4
+   */
+
+  --salmon-h: 349;
+  --salmon-s: 100%;
+  --salmon-l: 82%;
+
+  --salmon-hsl: var(--salmon-h), var(--salmon-s), var(--salmon-l);
+  --salmon-hs: var(--salmon-h), var(--salmon-s);
+  --salmon: hsl(var(--salmon-hsl));
+
+  --salmon-50: hsl(var(--salmon-hs), 95%);
+  --salmon-100: hsl(var(--salmon-hs), 90%);
+  --salmon-200: hsl(var(--salmon-hs), 80%);
+  --salmon-300: hsl(var(--salmon-hs), 70%);
+  --salmon-400: hsl(var(--salmon-hs), 60%);
+  --salmon-500: hsl(var(--salmon-hs), 50%);
+  --salmon-600: hsl(var(--salmon-hs), 40%);
+  --salmon-700: hsl(var(--salmon-hs), 30%);
+  --salmon-800: hsl(var(--salmon-hs), 20%);
+  --salmon-900: hsl(var(--salmon-hs), 10%);
+  --salmon-950: hsl(var(--salmon-hs), 5%);
+
+  --salmon-50-hsl: var(--salmon-hs), 95%;
+  --salmon-100-hsl: var(--salmon-hs), 90%;
+  --salmon-200-hsl: var(--salmon-hs), 80%;
+  --salmon-300-hsl: var(--salmon-hs), 70%;
+  --salmon-400-hsl: var(--salmon-hs), 60%;
+  --salmon-500-hsl: var(--salmon-hs), 50%;
+  --salmon-600-hsl: var(--salmon-hs), 40%;
+  --salmon-700-hsl: var(--salmon-hs), 30%;
+  --salmon-800-hsl: var(--salmon-hs), 20%;
+  --salmon-900-hsl: var(--salmon-hs), 10%;
+  --salmon-950-hsl: var(--salmon-hs), 5%;
+
+  /**
+   * Maya Blue: #83C6F6
+   */
+
+  --maya-h: 205;
+  --maya-s: 86%;
+  --maya-l: 74%;
+
+  --maya-hsl: var(--maya-h), var(--maya-s), var(--maya-l);
+  --maya-hs: var(--maya-h), var(--maya-s);
+  --maya: hsl(var(--maya-hsl));
+
+  --maya-50: hsl(var(--maya-hs), 95%);
+  --maya-100: hsl(var(--maya-hs), 90%);
+  --maya-200: hsl(var(--maya-hs), 80%);
+  --maya-300: hsl(var(--maya-hs), 70%);
+  --maya-400: hsl(var(--maya-hs), 60%);
+  --maya-500: hsl(var(--maya-hs), 50%);
+  --maya-600: hsl(var(--maya-hs), 40%);
+  --maya-700: hsl(var(--maya-hs), 30%);
+  --maya-800: hsl(var(--maya-hs), 20%);
+  --maya-900: hsl(var(--maya-hs), 10%);
+  --maya-950: hsl(var(--maya-hs), 5%);
+
+  --maya-50-hsl: var(--maya-hs), 95%;
+  --maya-100-hsl: var(--maya-hs), 90%;
+  --maya-200-hsl: var(--maya-hs), 80%;
+  --maya-300-hsl: var(--maya-hs), 70%;
+  --maya-400-hsl: var(--maya-hs), 60%;
+  --maya-500-hsl: var(--maya-hs), 50%;
+  --maya-600-hsl: var(--maya-hs), 40%;
+  --maya-700-hsl: var(--maya-hs), 30%;
+  --maya-800-hsl: var(--maya-hs), 20%;
+  --maya-900-hsl: var(--maya-hs), 10%;
+  --maya-950-hsl: var(--maya-hs), 5%;
+
+  /**
+   * Charcoal: #344055
+   */
+
+  --charcoal-h: 218;
+  --charcoal-s: 24%;
+  --charcoal-l: 27%;
+
+  --charcoal-hsl: var(--charcoal-h), var(--charcoal-s), var(--charcoal-l);
+  --charcoal-hs: var(--charcoal-h), var(--charcoal-s);
+  --charcoal: hsl(var(--charcoal-hsl));
+
+  --charcoal-50: hsl(var(--charcoal-hs), 95%);
+  --charcoal-100: hsl(var(--charcoal-hs), 90%);
+  --charcoal-200: hsl(var(--charcoal-hs), 80%);
+  --charcoal-300: hsl(var(--charcoal-hs), 70%);
+  --charcoal-400: hsl(var(--charcoal-hs), 60%);
+  --charcoal-500: hsl(var(--charcoal-hs), 50%);
+  --charcoal-600: hsl(var(--charcoal-hs), 40%);
+  --charcoal-700: hsl(var(--charcoal-hs), 30%);
+  --charcoal-800: hsl(var(--charcoal-hs), 20%);
+  --charcoal-900: hsl(var(--charcoal-hs), 10%);
+  --charcoal-950: hsl(var(--charcoal-hs), 5%);
+
+  --charcoal-50-hsl: var(--charcoal-hs), 95%;
+  --charcoal-100-hsl: var(--charcoal-hs), 90%;
+  --charcoal-200-hsl: var(--charcoal-hs), 80%;
+  --charcoal-300-hsl: var(--charcoal-hs), 70%;
+  --charcoal-400-hsl: var(--charcoal-hs), 60%;
+  --charcoal-500-hsl: var(--charcoal-hs), 50%;
+  --charcoal-600-hsl: var(--charcoal-hs), 40%;
+  --charcoal-700-hsl: var(--charcoal-hs), 30%;
+  --charcoal-800-hsl: var(--charcoal-hs), 20%;
+  --charcoal-900-hsl: var(--charcoal-hs), 10%;
+  --charcoal-950-hsl: var(--charcoal-hs), 5%;
+
+  /**
+   * Mindaro: #EDF67D
+   */
+
+  --mindaro-h: 236;
+  --mindaro-s: 87%;
+  --mindaro-l: 73%;
+
+  --mindaro-hsl: var(--mindaro-h), var(--mindaro-s), var(--mindaro-l);
+  --mindaro-hs: var(--mindaro-h), var(--mindaro-s);
+  --mindaro: hsl(var(--mindaro-hsl));
+
+  --mindaro-50: hsl(var(--mindaro-hs), 95%);
+  --mindaro-100: hsl(var(--mindaro-hs), 90%);
+  --mindaro-200: hsl(var(--mindaro-hs), 80%);
+  --mindaro-300: hsl(var(--mindaro-hs), 70%);
+  --mindaro-400: hsl(var(--mindaro-hs), 60%);
+  --mindaro-500: hsl(var(--mindaro-hs), 50%);
+  --mindaro-600: hsl(var(--mindaro-hs), 40%);
+  --mindaro-700: hsl(var(--mindaro-hs), 30%);
+  --mindaro-800: hsl(var(--mindaro-hs), 20%);
+  --mindaro-900: hsl(var(--mindaro-hs), 10%);
+  --mindaro-950: hsl(var(--mindaro-hs), 5%);
+
+  --mindaro-50-hsl: var(--mindaro-hs), 95%;
+  --mindaro-100-hsl: var(--mindaro-hs), 90%;
+  --mindaro-200-hsl: var(--mindaro-hs), 80%;
+  --mindaro-300-hsl: var(--mindaro-hs), 70%;
+  --mindaro-400-hsl: var(--mindaro-hs), 60%;
+  --mindaro-500-hsl: var(--mindaro-hs), 50%;
+  --mindaro-600-hsl: var(--mindaro-hs), 40%;
+  --mindaro-700-hsl: var(--mindaro-hs), 30%;
+  --mindaro-800-hsl: var(--mindaro-hs), 20%;
+  --mindaro-900-hsl: var(--mindaro-hs), 10%;
+  --mindaro-950-hsl: var(--mindaro-hs), 5%;
+
+  /**
+   * Screen sizes breakpoints.
+   */
+
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}
+
+/**
+ * This break points is used to make the width of the containers a little more
+ * predictable. Since it will jump from one to another, except for the smaller
+ * screens, where the container will occup the entire screen width.
+ */
+
+@media (min-width: 640px) {
+  :root {
+    --container-max-w: var(--screen-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-max-w: var(--screen-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-max-w: var(--screen-lg);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-max-w: var(--screen-xl);
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --container-max-w: var(--screen-2xl);
+  }
+}
+
+
+/**
+ * Main section styles.
+ */
+
+.hero {
+  height: min(calc(100svh - 12rem), calc(var(--screen-2xl) / 16 * 9));
+  margin-bottom: 4.75rem;
+}
+
+.hero__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  height: 100%;
+
+  padding: 2rem;
+}
+
+.hero__body__text {
+  margin-top: 1.75rem;
+  max-width: 40ch;
+}
+
+.hero__body__text__title {
+  color: var(--maya-500); /** CHANGE HERE!!!! */
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.75rem;
+
+  margin-bottom: 1rem;
+}
+
+.hero__body__text__subtitle {
+  color: var(--salmon-300);  /** CHANGE HERE!!!! */
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+
+  margin-bottom: 3.5rem;
+}
+
+.hero__body__text__open-btn {
+  padding: .75rem 1.5rem;
+  background-color: var(--maya-500);  /** CHANGE HERE!!!! */
+
+  border-radius: .25rem;
+
+  color: white;  /** CHANGE HERE!!!! */
+  font-size: 1.25rem;
+
+  transition: background 75ms ease;
+}
+
+.hero__body__text__open-btn:hover {
+  background-color: var(--maya-700);  /** CHANGE HERE!!!! */
+}
+
+.hero__body__ilustration__image {
+  --square-w: 60vw;
+  --square-max-w: 45ch;
+
+  width: var(--square-w);
+  max-width: var(--square-max-w);
+}
